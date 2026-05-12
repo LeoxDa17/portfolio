@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Leonardo — Dev & Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- cursor -->
+<div id="cur"></div>
+
+<!-- imagem flutuante dos cases -->
+<div id="case-img-follower">
+  <img id="case-img" src="" alt=""/>
+</div>
+
+<!-- ── NAV ── -->
+<nav id="navbar">   
+    <ul class="nav-links">
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#cases">Projetos</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+  </nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+
+    <!-- PARALAXE: esta div se move mais devagar que o scroll -->
+    <div class="parallax-bg" id="parallax-bg"></div>
+
+    <!-- Conteúdo textual do hero -->
+    <div class="hero-content">
+      <p class="hero-eyebrow">Desenvolvedor Frontend · 19 anos · Brasil</p>
+
+      <h1 class="hero-name">
+      Leonardo
+      </h1>
+
+      <!-- texto digitado via JS — typewriter effect -->
+      <p class="hero-typed" id="typed-text"></p>
+    </div>
+
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+
+  </section>
+
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="about-left">
+    <p class="sec-label reveal">Sobre mim</p>
+    <p class="big-text reveal d1">
+      Código que<br>transforma<br>ideias em<br>experiências.
+    </p>
+  </div>
+  <div class="about-right">
+    <p class="about-body reveal">
+      Tenho <strong>19 anos</strong> e sou apaixonado por construir coisas para a web.
+      Acredito que bom design e bom código andam juntos — cada projeto é uma chance
+      de criar algo <strong>funcional e bonito</strong> ao mesmo tempo.
+    </p>
+    <p class="about-body reveal d1">
+      Atualmente aprofundando conhecimentos em <strong>JavaScript</strong> e explorando
+      integrações com <strong>PHP + banco de dados SQL</strong> para construir aplicações completas.
+    </p>
+    <div class="about-tags reveal d2">
+      <span class="pill">HTML</span>
+      <span class="pill">CSS</span>
+      <span class="pill">JavaScript</span>
+      <span class="pill">UI / UX</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── CASES ── -->
+<section id="cases">
+  <div class="cases-header reveal">
+    <span class="cases-title">Projetos selecionados</span>
+    <span class="cases-count">(04)</span>
+  </div>
+
+  <div class="case-list">
+
+    <!-- Cada .case-item tem data-img com a URL da imagem do projeto -->
+    <a class="case-item reveal"
+       href="#"
+       onclick="return false"
+       data-img="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=700&q=80">
+      <span class="case-num">01</span>
+      <span class="case-name">Landing Page</span>
+      <div class="case-right">
+        <span class="case-type">HTML · CSS · JS</span>
+        <span class="case-year">2024</span>
+      </div>
+    </a>
+
+    <a class="case-item reveal d1"
+       href="#"
+       onclick="return false"
+       data-img="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=700&q=80">
+      <span class="case-num">02</span>
+      <span class="case-name">Sistema Login</span>
+      <div class="case-right">
+        <span class="case-type">PHP · MySQL</span>
+        <span class="case-year">2024</span>
+      </div>
+    </a>
+
+    <a class="case-item reveal d2"
+       href="#"
+       onclick="return false"
+       data-img="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&q=80">
+      <span class="case-num">03</span>
+      <span class="case-name">Dashboard UI</span>
+      <div class="case-right">
+        <span class="case-type">JavaScript · CSS</span>
+        <span class="case-year">2025</span>
+      </div>
+    </a>
+
+    <a class="case-item reveal d3"
+       href="#"
+       onclick="return false"
+       data-img="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=700&q=80">
+      <span class="case-num">04</span>
+      <span class="case-name">App CRUD</span>
+      <div class="case-right">
+        <span class="case-type">PHP · SQL · JS</span>
+        <span class="case-year">2025</span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <p class="connect-pre reveal">Vamos trabalhar juntos?</p>
+  <h2 class="connect-title reveal d1">
+    <span class="solid">Bora</span><br>
+    <span class="outline">construir</span><br>
+    <span class="solid">algo.</span>
+  </h2>
+  <a href="mailto:leonardo@email.com" class="btn-marquee-wrap reveal d2">
+    <span>Falar comigo</span>
+    <span class="btn-arrow">→</span>
+  </a>
+  <div class="socials reveal d3">
+    <a href="#">GitHub</a>
+    <a href="#">LinkedIn</a>
+    <a href="#">Instagram</a>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <span>© 2025 Leonardo</span>
+  <span>HTML · CSS · JS</span>
+</footer>
+
+<script>
+/* ─────────────────────────────────────────────
+   CURSOR — mix-blend-mode: difference
+   Faz o cursor inverter as cores do fundo,
+   igual ao efeito do Patrick David.
+───────────────────────────────────────────── */
+const cur = document.getElementById('cur');
+let cx = 0, cy = 0;
+
+document.addEventListener('mousemove', e => {
+  cx = e.clientX; cy = e.clientY;
+  cur.style.left = cx + 'px';
+  cur.style.top  = cy + 'px';
+});
+
+document.querySelectorAll('a, button').forEach(el => {
+  el.addEventListener('mouseenter', () => cur.classList.add('big'));
+  el.addEventListener('mouseleave', () => cur.classList.remove('big'));
+});
+
+
+/* ─────────────────────────────────────────────
+   CASES — IMAGEM QUE SEGUE O MOUSE
+   
+   Como funciona:
+   1. Cada .case-item tem data-img com URL da imagem
+   2. No mouseenter, carregamos essa imagem no follower
+      e adicionamos .active (CSS faz ela aparecer)
+   3. No mousemove, movemos o follower com lerp (suave)
+   4. No mouseleave, removemos .active (some)
+───────────────────────────────────────────── */
+const follower = document.getElementById('case-img-follower');
+const followerImg = document.getElementById('case-img');
+
+let fx = window.innerWidth / 2; // posição atual do follower
+let fy = window.innerHeight / 2;
+let targetX = fx, targetY = fy; // posição alvo (onde o mouse está)
+let isFollowing = false;
+
+// loop de animação com lerp
+// lerp: a cada frame, move 12% do caminho até o alvo
+// resultado: movimento suave com leve atraso
+function followLoop() {
+  if (isFollowing) {
+    fx += (targetX - fx) * 0.12;
+    fy += (targetY - fy) * 0.12;
+    follower.style.left = fx + 'px';
+    follower.style.top  = fy + 'px';
+  }
+  requestAnimationFrame(followLoop);
+}
+followLoop();
+
+document.querySelectorAll('.case-item').forEach(item => {
+  const imgUrl = item.dataset.img;
+
+  item.addEventListener('mouseenter', () => {
+    followerImg.src = imgUrl;
+    follower.classList.add('active');
+    isFollowing = true;
+  });
+
+  item.addEventListener('mousemove', e => {
+    targetX = e.clientX;
+    targetY = e.clientY;
+  });
+
+  item.addEventListener('mouseleave', () => {
+    follower.classList.remove('active');
+    isFollowing = false;
+  });
+});
+
+
+/* ===========================================================
+       3. TYPEWRITER — EFEITO DE DIGITAÇÃO
+       Técnica: um array de frases. Adicionamos letra por letra
+       com setTimeout recursivo, depois apagamos letra por letra,
+       depois passamos para a próxima frase.
+    =========================================================== */
+    const typedEl  = document.getElementById('typed-text');
+    const phrases  = [
+      'Desenvolvedor Frontend',
+      'Apaixonado por UI/UX',
+      'Curioso por natureza',
+      'HTML · CSS · JS · PHP'
+    ];
+
+    let phraseIndex = 0;  // qual frase estamos
+    let charIndex   = 0;  // qual caractere estamos
+    let isDeleting  = false;
+
+    function typeWriter() {
+      const currentPhrase = phrases[phraseIndex];
+
+      if (!isDeleting) {
+        // DIGITANDO: adiciona um caractere
+        typedEl.textContent = currentPhrase.slice(0, charIndex + 1);
+        charIndex++;
+
+        if (charIndex === currentPhrase.length) {
+          // terminou de digitar → pausa e começa a apagar
+          isDeleting = true;
+          setTimeout(typeWriter, 1800); // pausa de 1.8s
+          return;
+        }
+      } else {
+        // APAGANDO: remove um caractere
+        typedEl.textContent = currentPhrase.slice(0, charIndex - 1);
+        charIndex--;
+
+        if (charIndex === 0) {
+          // terminou de apagar → próxima frase
+          isDeleting = false;
+          phraseIndex = (phraseIndex + 1) % phrases.length;
+        }
+      }
+
+      // velocidade: digitar = 80ms, apagar = 40ms (mais rápido)
+      setTimeout(typeWriter, isDeleting ? 40 : 80);
+    }
+
+    // inicia após 1.2s (hero já apareceu)
+    setTimeout(typeWriter, 1200);
+
+
+    /* ===========================================================
+       4. PARALLAX — FUNDO QUE SE MOVE AO ROLAR
+       Técnica: ao rolar, pegamos window.scrollY (quanto rolou).
+       Movemos o fundo uma fração desse valor (ex: * 0.35).
+       Como se move menos que a página, parece mais "atrás".
+
+       IMPORTANTE: usamos transform: translateY() em vez de
+       background-position porque transform é acelerado por GPU.
+    =========================================================== */
+    const parallaxBg = document.getElementById('parallax-bg');
+
+    window.addEventListener('scroll', () => {
+      // 0.35 = velocidade do parallax (ajuste entre 0.1 e 0.6)
+      const offset = window.scrollY * 0.35;
+      parallaxBg.style.transform = `translateY(${offset}px)`;
+    });
+
+
+    /* ===========================================================
+       5. SCROLL REVEAL — INTERSECTION OBSERVER
+       Técnica: IntersectionObserver "observa" elementos na tela.
+       Quando um elemento entra na viewport, o callback é chamado
+       e adicionamos a classe .visible (CSS faz a animação).
+
+       Vantagem vs scroll: muito mais performático, não roda
+       cálculo a cada pixel rolado.
+    =========================================================== */
+    const revealEls = document.querySelectorAll('.reveal');
+
+    // opções do observer
+    const observerOptions = {
+      threshold: 0.12,   // dispara quando 12% do elemento está visível
+      rootMargin: '0px'
+    };
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // elemento entrou na tela → adiciona .visible
+          entry.target.classList.add('visible');
+          // opcional: parar de observar após revelar (performance)
+          // revealObserver.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    // registra cada elemento com .reveal no observer
+    revealEls.forEach(el => revealObserver.observe(el));
+
+
+    /* ===========================================================
+       6. CANVAS API — PARTÍCULAS INTERATIVAS
+       Técnica: canvas é uma área de desenho do HTML.
+       Usamos canvas.getContext('2d') para obter o "pincel".
+       A cada frame (requestAnimationFrame), limpamos e redesenhamos
+       todos os pontos em novas posições.
+
+       O efeito de conexão verifica a distância entre pontos:
+       se menor que maxDist, desenha uma linha entre eles.
+    =========================================================== */
+    (function initParticles() {
+
+      const canvas = document.getElementById('particles-canvas');
+      const ctx    = canvas.getContext('2d'); // nosso "pincel"
+
+      // ajusta tamanho do canvas ao container
+      function resize() {
+        canvas.width  = canvas.offsetWidth;
+        canvas.height = canvas.offsetHeight;
+      }
+      resize();
+      window.addEventListener('resize', resize);
+
+      // posição do mouse para efeito de repulsão
+      let mx = -9999, my = -9999;
+      canvas.addEventListener('mousemove', e => {
+        const rect = canvas.getBoundingClientRect();
+        mx = e.clientX - rect.left;
+        my = e.clientY - rect.top;
+      });
+      canvas.addEventListener('mouseleave', () => { mx = -9999; my = -9999; });
+
+      // ---- CRIAÇÃO DAS PARTÍCULAS ----
+      const PARTICLE_COUNT = 80;
+      const MAX_DIST       = 130; // distância máxima para desenhar linha
+      const REPEL_DIST     = 100; // distância de repulsão pelo mouse
+
+      // cria array de partículas com posição e velocidade aleatórias
+      const particles = Array.from({ length: PARTICLE_COUNT }, () => ({
+        x:  Math.random() * canvas.width,
+        y:  Math.random() * canvas.height,
+        vx: (Math.random() - 0.5) * 0.5, // velocidade x (-0.25 a 0.25)
+        vy: (Math.random() - 0.5) * 0.5, // velocidade y
+        r:  Math.random() * 2 + 1         // raio (1 a 3px)
+      }));
+
+      // ---- LOOP DE ANIMAÇÃO ----
+      function draw() {
+        // limpa o canvas a cada frame
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // atualiza e desenha cada partícula
+        particles.forEach(p => {
+
+          // move a partícula pela velocidade
+          p.x += p.vx;
+          p.y += p.vy;
+
+          // rebate nas bordas (inverte velocidade)
+          if (p.x < 0 || p.x > canvas.width)  p.vx *= -1;
+          if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+
+          // repulsão pelo mouse
+          const dx    = p.x - mx;
+          const dy    = p.y - my;
+          const dist  = Math.sqrt(dx * dx + dy * dy); // distância euclidiana
+
+          if (dist < REPEL_DIST) {
+            // empurra a partícula para longe do mouse
+            const force = (REPEL_DIST - dist) / REPEL_DIST;
+            p.vx += (dx / dist) * force * 0.5;
+            p.vy += (dy / dist) * force * 0.5;
+            // limita velocidade máxima
+            p.vx = Math.max(-2, Math.min(2, p.vx));
+            p.vy = Math.max(-2, Math.min(2, p.vy));
+          } else {
+            // amortecimento gradual para voltar à velocidade normal
+            p.vx *= 0.99;
+            p.vy *= 0.99;
+          }
+
+          // desenha o ponto (círculo preenchido)
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(255,255,255,0.5)';
+          ctx.fill();
+        });
+
+        // ---- DESENHA LINHAS ENTRE PARTÍCULAS PRÓXIMAS ----
+        for (let i = 0; i < particles.length; i++) {
+          for (let j = i + 1; j < particles.length; j++) { // j = i+1 evita duplicar
+            const a  = particles[i];
+            const b  = particles[j];
+            const dx = a.x - b.x;
+            const dy = a.y - b.y;
+            const d  = Math.sqrt(dx * dx + dy * dy);
+
+            if (d < MAX_DIST) {
+              // opacidade diminui com a distância (mais longe = mais transparente)
+              const alpha = 1 - d / MAX_DIST;
+              ctx.beginPath();
+              ctx.moveTo(a.x, a.y);
+              ctx.lineTo(b.x, b.y);
+              ctx.strokeStyle = `rgba(168, 85, 247, ${alpha * 0.35})`; // roxo
+              ctx.lineWidth   = 0.8;
+              ctx.stroke();
+            }
+          }
+        }
+
+        // solicita próximo frame (~60fps)
+        requestAnimationFrame(draw);
+      }
+
+      draw(); // inicia o loop
+
+    })(); // IIFE — executa imediatamente e não polui o escopo global
+
+
+    /* ===========================================================
+       7. CANVAS API — GRADE DE PONTOS DECORATIVA (seção contato)
+       Técnica mais simples: grade estática de círculos pequenos.
+       Não anima — apenas preenche o fundo com textura.
+    =========================================================== */
+    (function initDots() {
+
+      const canvas = document.getElementById('dots-canvas');
+      const ctx    = canvas.getContext('2d');
+
+      function draw() {
+        canvas.width  = canvas.offsetWidth;
+        canvas.height = canvas.offsetHeight;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        const spacing = 28; // distância entre pontos
+        const dotR    = 1;  // raio de cada ponto
+
+        // dois loops: percorre colunas (x) e linhas (y)
+        for (let x = spacing; x < canvas.width;  x += spacing) {
+          for (let y = spacing; y < canvas.height; y += spacing) {
+            ctx.beginPath();
+            ctx.arc(x, y, dotR, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(255,255,255,0.15)';
+            ctx.fill();
+          }
+        }
+      }
+
+      draw();
+      window.addEventListener('resize', draw);
+
+    })();
+</script>
+</body>
+</html>
