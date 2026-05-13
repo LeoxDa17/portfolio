@@ -30,7 +30,7 @@ nav {
       z-index: 100;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: right;
       padding: 1.6rem 5vw;
       background: rgba(12,12,12,0); /* começa transparente */
       transition: background .4s, backdrop-filter .4s;
@@ -153,17 +153,12 @@ nav {
     .hero-name {
       font-family: 'Syne', sans-serif;
       font-size: clamp(3.5rem, 10vw, 9rem); /* tamanho fluido */
-      font-weight: 670;
+      font-weight: 600;
       line-height: .92;
       letter-spacing: -.04em;
       opacity: 0;
       animation: fadeUp .9s .4s forwards;
       text-align: left;
-    }
-
-    /* letra colorida no nome */
-    .hero-name .accent-letter {
-      color: var(--accent);
     }
 
     /* texto digitado */
